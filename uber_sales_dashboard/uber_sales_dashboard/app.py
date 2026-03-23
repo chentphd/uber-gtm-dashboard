@@ -399,7 +399,7 @@ tabs = st.tabs([
 # ═══════════════════════════════════════════════════════════════════════════════
 with tabs[0]:
     st.markdown("<div class='section-header'>AE Performance by Mega Region</div>", unsafe_allow_html=True)
-    st.markdown("<div class='section-sub'>What → So What → Now What framework applied to attainment distributions</div>", unsafe_allow_html=True)
+    #st.markdown("<div class='section-sub'>What → So What → Now What framework applied to attainment distributions</div>", unsafe_allow_html=True)
 
     # ── Row 1: Attainment by Region ──────────────────────────────────────────
     col_a, col_b = st.columns([1.4, 1])
@@ -471,7 +471,7 @@ with tabs[0]:
         fig2 = go.Figure(go.Pie(
             labels=tier_counts.index,
             values=tier_counts.values,
-            hole=0.55,
+            hole=0.45,
             marker_colors=[tier_colors_map[t] for t in tier_counts.index],
             textinfo="percent+label",
             textfont_size=10,
